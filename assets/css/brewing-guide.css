@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+/* Header and Navigation */
+header {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Brewing Guide Specific Styles */
+#brewing-guide {
+  padding: 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+#brewing-guide h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+#brewing-guide ol {
+  list-style-position: inside;
+  counter-reset: step-counter;
+  padding-left: 0;
+}
+
+#brewing-guide li {
+  counter-increment: step-counter;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: left;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#brewing-guide li:before {
+  content: "Step " counter(step-counter) ": ";
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  nav ul {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+/* Header and Navigation */
+header {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-title {
+  cursor: pointer;
+  padding: 15px;
+  text-align: left;
+  background: #333;
+  color: #fff;
+  margin: 0;
+}
+
+.accordion-content {
+  background: #f4f4f4;
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+.accordion-content ul {
+  margin: 15px 0;
+}
+
+.accordion-content ul li {
+  margin-bottom: 5px;
+}
+
+.accordion-content.active {
+  max-height: 200px;
+  padding-bottom: 15px;
+}
+
+main {
+  margin: 0.5rem 0;
+  padding: 0.8rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .accordion-title {
+    font-size: 1.2em;
+  }
+
+  .accordion-content ul li {
+    font-size: 0.9em;
+  }
+
+  main {
+    padding: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+}
